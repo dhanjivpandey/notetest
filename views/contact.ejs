@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+
+<div class="container-fluid bg-3 text-center">    
+  <br>
+  <div class="row"> 
+        <div class="col-md-3"> 
+                      
+        </div> 
+                  
+        <div class="col-md-6 main"> 
+                      
+            <form name='createForm' id='createForm' method='POST' action='/contact_submit'> 
+                      
+           <h3><%= page %></h3>
+                              
+            <input class="box" type="text" name="name" id="name" placeholder="Name" value=""  ><br> 
+                              
+            <input class="box" type="text" name="email" id="email" placeholder="E-Mail" value="" /><br> 
+                              
+            <input class="box" type="text" name="phone" id="phone" placeholder="phone" value=""/><br> 
+                              
+            <input class="box" type="text" name="msg" id="msg"  placeholder="Message" value=""/><br> 
+                        <br> 
+            <input type="submit"  value="Submit" /><br> 
+                      
+            </form> 
+                      
+        </div> 
+                  
+                  
+        <div class="col-md-3"> 
+        </div> 
+                  
+    </div> 
+</div>
+
+</body>
+<% include partials/script %>
+</html>
