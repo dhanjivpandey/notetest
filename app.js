@@ -30,5 +30,5 @@ app.use(function(err, req, res, next) {
   res.render('error', {status:err.status, message:err.message});
 });
 app.listen(3000, '127.0.0.1');
-console.log('Node server running on port 3000');
+console.log('Node server running on 127.0.0.1 and port 3000 ');
 module.exports = app;
